@@ -3,8 +3,8 @@ const fs = require("fs");
 // by default thereads are 4 but we can set it machine by machine
 
 const os = require('os');
-console.log(os.cpus());
-console.log(os.cpus().length);
+// console.log(os.cpus());
+// console.log(os.cpus().length);
 
 // blocking or synchronus operations
 // console.log('before file read')
@@ -17,4 +17,5 @@ console.log("before file read");
 fs.readFile("test.js", "utf-8", (err, result) => {
   console.log(result);
 });
+setTimeout(()=>{console.log('inside settimeout')},0)
 console.log("after file read");
