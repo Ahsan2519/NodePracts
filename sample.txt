@@ -2,3 +2,20 @@ testing of blocking and non blocking
 Some additional content!
 
 Some additional content!
+
+most used built in modules are
+1. path
+2. events
+3. fs
+4. stream
+6. http
+
+
+phases of event loop
+process.nextTick(cb)
+1. timer 
+2. pending callbacks (related to networks)
+3. idle, prepare 
+4. poll ( incoming connection like file read data)
+5. check (special timer setImmidiate timer)
+6. close callback 
